@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+echo "🔍 Validating commit message format with Commitlint..."
+npx --no -- commitlint --edit $1
