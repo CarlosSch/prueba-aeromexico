@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "lint-staged": "lint-staged",
-    "prettier:check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css}\"",
-    "prettier:format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,css}\"",
+    "prettier:check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,scss}\"",
+    "prettier:format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,scss}\"",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "test": "jest",
@@ -27,7 +27,8 @@
   "dependencies": {
     "next": "16.0.1",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "sass": "^1.93.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
