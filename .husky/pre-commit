@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+echo "🔍 Running pre-commit checks...\n"
+
+npm run prettier:format
+npm run lint-staged
+npm run test
