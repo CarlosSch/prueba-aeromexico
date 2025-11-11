@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Roboto_Condensed } from 'next/font/google';
+import { ReduxProvider } from '@/core/store';
 import '@/styles/globals.scss';
 
 const robotoCondensed = Roboto_Condensed({
@@ -20,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true} data-lt-installed={true}>
-      <body className={robotoCondensed.className}>{children}</body>
+      <body className={robotoCondensed.className}>
+        <ReduxProvider>{children}</ReduxProvider>
+      </body>
     </html>
   );
 }
