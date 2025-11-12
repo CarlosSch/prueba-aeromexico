@@ -18,5 +18,10 @@ export type Character = {
   episode: string[];
   url: string;
   created: string;
-  isFavorite: boolean;
+};
+
+export type CharacterState = {
+  items: Character[];
+  isLoading: boolean;
+  error?: string;
 };
