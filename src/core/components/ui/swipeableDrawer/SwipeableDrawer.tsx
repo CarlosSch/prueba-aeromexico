@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './swipeableDrawer.module.scss';
 import { CSSProperties, PropsWithChildren, useState } from 'react';
 import { createBem } from '@/core/utils';
