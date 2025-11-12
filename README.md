@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prueba Aeroméxico
 
-## Getting Started
+Aplicacion construida con **Next.js 16** y **React 19** que consume un backend mock via `json-server`. Incluye Redux Toolkit para el estado global y estilos en **SASS** siguiendo la convención **BEM**.
 
-First, run the development server:
+## Requisitos previos
+
+- Node.js **>= 18.18**
+- npm **>= 10**
+
+Comandos para revisar las versiones:
+
+```bash
+node -v
+npm -v
+```
+
+## Instalación
+
+```bash
+npm install
+```
+
+## Ejecución en desarrollo
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`npm run dev` usa `concurrently` para lanzar al mismo tiempo:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev:next` -> FRONTEND en http://localhost:3000
+- `npm run dev:api` -> API en http://localhost:4000 leyendo `json-server/db.json`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Los comandos se pueden ejecuar por separado.
 
-## Learn More
+## Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` – Frontend + API mock.
+- `npm run dev:next` – Solo Next.js.
+- `npm run dev:api` – Solo `json-server`.
+- `npm run lint` – Revisa el estilo con ESLint.
+- `npm run test` – Ejecuta las pruebas unitarias (Jest + React Testing Library).
+- `npm run test:coverage` – Genera reporte de pruebas.
+- `npm run build` – Compila la app para producción.
+- `npm start` – Sirve la build en el puerto 3000.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Husky y control de calidad
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Agrege **Husky** para asegurar que el código cumplierá las reglas antes de crear commits:
 
-## Deploy on Vercel
+1. Hook `pre-commit`: corre `npm run prettier:format`, `npm run lint-staged` y `npm run test`. Si algo falla el commit se cancela.
+2. Hook `commit-msg`: valida el mensaje usando Commitlint (`npx commitlint --edit $1`) para mantener un historial legible.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Pruebas y calidad
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm test
+npm run lint
+npm run test:coverage
+```
+
+## ¿Qué es lo que más te gustó de TU desarrollo?
+
+Lo que más me gustó de mi desarrollo fue haber construido una arquitectura limpia y escalable, aplicando principios de Clean Code, SOLID y DRY.
+
+Diseñé la estructura modular con enfoque screaming architecture, separando claramente el dominio, los módulos de negocio y los componentes compartidos.
+
+También disfruté mucho configurar todo el entorno de calidad y control de código:
+
+Husky, para automatizar validaciones pre-commit y pre-push, ejecutando lint, prettier y test antes de cada commit.
+
+ESLint y Prettier, para mantener un estilo de código uniforme en todo el equipo y detectar errores de forma temprana.
+
+Commitlint, para estandarizar los mensajes de commit bajo las convenciones Conventional Commits.
+
+## Si hubieras tenido más tiempo ¿qué hubieras mejorado o qué más hubieras hecho?
+
+Agregaría más soporte responsivo para mobile e incluir soporte multi lenguaje con i18n. Tambien me hubiera encantado implementar un ordenamiento por nombre, episodios, etc.
+
+## Descríbenos un pain point o bug con el que te hayas encontrado y como lo solucionaste
+
+Durante la implementación de pruebas unitarias con Jest y RTL con Redux Toolkit, me encontré con un problema al testear componentes que usaban el hook useAppDispatch() y acciones asíncronas (createAsyncThunk).
+
+El jest.Mock, lo convertí primero a unknown. Así eliminé el error de tipos y pude verificar que el dispatch se llamaba correctamente.
+
+---
