@@ -1,0 +1,40 @@
+@use '@/styles/variables' as *;
+@use '@/styles/breakpoints' as *;
+
+.swipeable-drawer {
+  position: relative;
+  width: 100%;
+
+  &__sheet {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    transition: transform 0.18s ease;
+    background: $grey;
+    z-index: 999;
+  }
+
+  &__title {
+    padding: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  &__content {
+    height: 150px;
+    padding: 0.5rem 0;
+  }
+
+  @include mobile() {
+    &__sheet {
+      bottom: -435px;
+    }
+  }
+}

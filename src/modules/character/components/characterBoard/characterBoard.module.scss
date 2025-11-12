@@ -1,0 +1,48 @@
+@use '@/styles/variables' as *;
+@use '@/styles/breakpoints' as *;
+
+.character-board {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 70dvh;
+  width: 75dvw;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-left: 10%;
+  grid-template-areas: 'left right';
+
+  &__left {
+    background-color: $background-color;
+    display: flex;
+    overflow: hidden;
+    grid-area: left;
+  }
+
+  &__right {
+    background-color: $background-color;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: right;
+  }
+
+  @include mobile() {
+    width: 80dvw;
+    height: calc(100dvh - 106px);
+    margin-left: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'right' 'left';
+    border-radius: unset;
+    padding-bottom: 8rem;
+    gap: 1rem;
+
+    &__left {
+      border-radius: 1rem;
+    }
+
+    &__right {
+      background-color: transparent;
+    }
+  }
+}
