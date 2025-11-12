@@ -1,0 +1,81 @@
+@use '@/styles/variables' as *;
+@use '@/styles/breakpoints' as *;
+
+$sb-w: 2rem;
+$btn-bg: #7b7b7bb2;
+$btn-bg-active: #5b5454b2;
+$radius: 0.25rem;
+$icon-up: '../../../../assets/icons/arrow-up.svg';
+$icon-up-a: '../../../../assets/icons/arrow-up-active.svg';
+$icon-down: '../../../../assets/icons/arrow-down.svg';
+$icon-down-a: '../../../../assets/icons/arrow-down-active.svg';
+
+.character-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+  padding: 2rem 0.5rem 4rem;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+    padding: 2rem;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 2rem;
+    }
+
+    &::-webkit-scrollbar-button:single-button:vertical:increment,
+    &::-webkit-scrollbar-button:single-button:vertical:decrement {
+      height: $sb-w;
+      background: $btn-bg;
+      border-radius: $radius;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:active {
+        background-color: $btn-bg-active;
+      }
+    }
+
+    &::-webkit-scrollbar-button:single-button:vertical:decrement {
+      background-image: url($icon-up);
+
+      &:active,
+      &:hover {
+        background-image: url($icon-up-a);
+      }
+    }
+
+    &::-webkit-scrollbar-button:single-button:vertical:increment {
+      background-image: url($icon-down);
+
+      &:active,
+      &:hover {
+        background-image: url($icon-down-a);
+      }
+    }
+  }
+
+  @include mobile() {
+    padding: 0;
+
+    &__list {
+      padding: 0.5rem;
+      grid-template-columns: unset;
+    }
+  }
+}
+
+.not-found {
+  padding: 1rem 0;
+  text-align: center;
+
+  &__term {
+    color: $secondary-color;
+  }
+}

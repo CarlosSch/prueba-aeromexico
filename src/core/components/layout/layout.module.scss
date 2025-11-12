@@ -1,0 +1,23 @@
+@use '@/styles/breakpoints' as *;
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-image: url('../../../assets/images/rick-and-morty-bg.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__main {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+
+  @include mobile() {
+    gap: unset;
+  }
+}
