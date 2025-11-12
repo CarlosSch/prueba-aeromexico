@@ -1,7 +1,7 @@
 {
   "characters": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Rick Sanchez",
       "status": "Alive",
       "species": "Human",
@@ -70,11 +70,10 @@
         "https://rickandmortyapi.com/api/episode/51"
       ],
       "url": "https://rickandmortyapi.com/api/character/1",
-      "created": "2017-11-04T18:48:46.250Z",
-      "isFavorite": false
+      "created": "2017-11-04T18:48:46.250Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Morty Smith",
       "status": "Alive",
       "species": "Human",
@@ -143,22 +142,21 @@
         "https://rickandmortyapi.com/api/episode/51"
       ],
       "url": "https://rickandmortyapi.com/api/character/2",
-      "created": "2017-11-04T18:50:21.651Z",
-      "isFavorite": false
+      "created": "2017-11-04T18:50:21.651Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Summer Smith",
       "status": "Alive",
       "species": "Human",
       "type": "",
       "gender": "Female",
       "origin": {
-        "name": "Earth (Replacement Dimension)",
+        "name": "Earth",
         "url": "https://rickandmortyapi.com/api/location/20"
       },
       "location": {
-        "name": "Earth (Replacement Dimension)",
+        "name": "Earth",
         "url": "https://rickandmortyapi.com/api/location/20"
       },
       "image": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
@@ -207,22 +205,21 @@
         "https://rickandmortyapi.com/api/episode/51"
       ],
       "url": "https://rickandmortyapi.com/api/character/3",
-      "created": "2017-11-04T19:09:56.428Z",
-      "isFavorite": false
+      "created": "2017-11-04T19:09:56.428Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Beth Smith",
       "status": "Alive",
       "species": "Human",
       "type": "",
       "gender": "Female",
       "origin": {
-        "name": "Earth (Replacement Dimension)",
+        "name": "Earth",
         "url": "https://rickandmortyapi.com/api/location/20"
       },
       "location": {
-        "name": "Earth (Replacement Dimension)",
+        "name": "Earth",
         "url": "https://rickandmortyapi.com/api/location/20"
       },
       "image": "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
@@ -271,22 +268,21 @@
         "https://rickandmortyapi.com/api/episode/51"
       ],
       "url": "https://rickandmortyapi.com/api/character/4",
-      "created": "2017-11-04T19:22:43.665Z",
-      "isFavorite": false
+      "created": "2017-11-04T19:22:43.665Z"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Jerry Smith",
       "status": "Alive",
       "species": "Human",
       "type": "",
       "gender": "Male",
       "origin": {
-        "name": "Earth (Replacement Dimension)",
+        "name": "Earth",
         "url": "https://rickandmortyapi.com/api/location/20"
       },
       "location": {
-        "name": "Earth (Replacement Dimension)",
+        "name": "Earth",
         "url": "https://rickandmortyapi.com/api/location/20"
       },
       "image": "https://rickandmortyapi.com/api/character/avatar/5.jpeg",
@@ -332,32 +328,30 @@
         "https://rickandmortyapi.com/api/episode/51"
       ],
       "url": "https://rickandmortyapi.com/api/character/5",
-      "created": "2017-11-04T19:26:56.301Z",
-      "isFavorite": false
+      "created": "2017-11-04T19:26:56.301Z"
     },
     {
-      "id": 6,
-      "name": "Abadango Cluster Princess",
+      "id": "63",
+      "name": "Centaur",
       "status": "Alive",
-      "species": "Alien",
-      "type": "",
-      "gender": "Female",
+      "species": "Mythological Creature",
+      "type": "Centaur",
+      "gender": "Male",
       "origin": {
-        "name": "Abadango",
-        "url": "https://rickandmortyapi.com/api/location/2"
+        "name": "unknown",
+        "url": ""
       },
       "location": {
-        "name": "Abadango",
-        "url": "https://rickandmortyapi.com/api/location/2"
+        "name": "Mr. Goldenfold's dream",
+        "url": "https://rickandmortyapi.com/api/location/18"
       },
-      "image": "https://rickandmortyapi.com/api/character/avatar/6.jpeg",
-      "episode": ["https://rickandmortyapi.com/api/episode/27"],
-      "url": "https://rickandmortyapi.com/api/character/6",
-      "created": "2017-11-04T19:50:28.250Z",
-      "isFavorite": false
+      "image": "https://rickandmortyapi.com/api/character/avatar/63.jpeg",
+      "episode": ["https://rickandmortyapi.com/api/episode/2"],
+      "url": "https://rickandmortyapi.com/api/character/63",
+      "created": "2017-11-05T12:22:17.848Z"
     },
     {
-      "id": 242,
+      "id": "242",
       "name": "Mr. Meeseeks",
       "status": "unknown",
       "species": "Humanoid",
@@ -380,11 +374,10 @@
         "https://rickandmortyapi.com/api/episode/32"
       ],
       "url": "https://rickandmortyapi.com/api/character/242",
-      "created": "2017-12-30T17:52:12.243Z",
-      "isFavorite": false
+      "created": "2017-12-30T17:52:12.243Z"
     },
     {
-      "id": 244,
+      "id": "244",
       "name": "Mr. Poopybutthole",
       "status": "Alive",
       "species": "Poopybutthole",
@@ -395,7 +388,7 @@
         "url": ""
       },
       "location": {
-        "name": "Earth (Replacement Dimension)",
+        "name": "Earth",
         "url": "https://rickandmortyapi.com/api/location/20"
       },
       "image": "https://rickandmortyapi.com/api/character/avatar/244.jpeg",
@@ -409,11 +402,10 @@
         "https://rickandmortyapi.com/api/episode/51"
       ],
       "url": "https://rickandmortyapi.com/api/character/244",
-      "created": "2017-12-30T18:03:48.054Z",
-      "isFavorite": false
+      "created": "2017-12-30T18:03:48.054Z"
     },
     {
-      "id": 265,
+      "id": "265",
       "name": "Pickle Rick",
       "status": "Alive",
       "species": "unknown",
@@ -424,17 +416,16 @@
         "url": "https://rickandmortyapi.com/api/location/1"
       },
       "location": {
-        "name": "Earth (Replacement Dimension)",
+        "name": "Earth",
         "url": "https://rickandmortyapi.com/api/location/20"
       },
       "image": "https://rickandmortyapi.com/api/character/avatar/265.jpeg",
       "episode": ["https://rickandmortyapi.com/api/episode/24"],
       "url": "https://rickandmortyapi.com/api/character/265",
-      "created": "2017-12-31T13:47:10.617Z",
-      "isFavorite": false
+      "created": "2017-12-31T13:47:10.617Z"
     },
     {
-      "id": 329,
+      "id": "329",
       "name": "Snuffles (Snowball)",
       "status": "Alive",
       "species": "Animal",
@@ -460,8 +451,27 @@
         "https://rickandmortyapi.com/api/episode/30"
       ],
       "url": "https://rickandmortyapi.com/api/character/329",
-      "created": "2018-01-10T16:24:49.586Z",
-      "isFavorite": false
+      "created": "2018-01-10T16:24:49.586Z"
+    },
+    {
+      "id": "732",
+      "name": "Blazen",
+      "status": "Dead",
+      "species": "Human",
+      "type": "",
+      "gender": "Male",
+      "origin": {
+        "name": "Earth",
+        "url": "https://rickandmortyapi.com/api/location/20"
+      },
+      "location": {
+        "name": "Earth",
+        "url": "https://rickandmortyapi.com/api/location/20"
+      },
+      "image": "https://rickandmortyapi.com/api/character/avatar/732.jpeg",
+      "episode": ["https://rickandmortyapi.com/api/episode/45"],
+      "url": "https://rickandmortyapi.com/api/character/732",
+      "created": "2021-10-17T11:59:00.689Z"
     }
   ],
   "favorites": []
